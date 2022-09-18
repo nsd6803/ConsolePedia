@@ -4,8 +4,9 @@
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="1">
+          <list size="2">
             <item index="0" class="java.lang.String" itemvalue="alt" />
+            <item index="1" class="java.lang.String" itemvalue="start" />
           </list>
         </value>
       </option>
@@ -14,7 +15,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="18">
+          <list size="21">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -33,6 +34,9 @@
             <item index="15" class="java.lang.String" itemvalue="center" />
             <item index="16" class="java.lang.String" itemvalue="b" />
             <item index="17" class="java.lang.String" itemvalue="font" />
+            <item index="18" class="java.lang.String" itemvalue="blockquote" />
+            <item index="19" class="java.lang.String" itemvalue="li" />
+            <item index="20" class="java.lang.String" itemvalue="dl" />
           </list>
         </value>
       </option>
