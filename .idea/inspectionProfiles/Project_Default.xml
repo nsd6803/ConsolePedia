@@ -4,10 +4,12 @@
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="3">
+          <list size="5">
             <item index="0" class="java.lang.String" itemvalue="alt" />
             <item index="1" class="java.lang.String" itemvalue="start" />
             <item index="2" class="java.lang.String" itemvalue="font" />
+            <item index="3" class="java.lang.String" itemvalue="href" />
+            <item index="4" class="java.lang.String" itemvalue="#55d52b" />
           </list>
         </value>
       </option>
@@ -16,7 +18,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="21">
+          <list size="23">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -38,6 +40,8 @@
             <item index="18" class="java.lang.String" itemvalue="blockquote" />
             <item index="19" class="java.lang.String" itemvalue="li" />
             <item index="20" class="java.lang.String" itemvalue="dl" />
+            <item index="21" class="java.lang.String" itemvalue="style" />
+            <item index="22" class="java.lang.String" itemvalue="adress" />
           </list>
         </value>
       </option>
