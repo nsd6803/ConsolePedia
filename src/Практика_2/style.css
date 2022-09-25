@@ -11,6 +11,18 @@ body{
 
 }
 
+a, a:visited{
+  color: inherit;
+}
+
+a:hover{
+    color: blue;
+}
+
+a:active{
+    color: red;
+}
+
 header{
   width: 100vw;
   height: 100vh;
@@ -65,7 +77,8 @@ background: #ed404f;
     left: 0px;
 }
 
-a.button_selection {
+a.button_selection,
+a.button_selection:visited {
     margin:0 auto;
     display: block;
     line-height: 50px;
@@ -97,10 +110,4 @@ a.button_selection:active {
     background: #1d8615;
 }
 
-a.button_selection:visited {
-    margin-top: -50px;
-    height: 100px;
-    background: inherit;
-
-}
 
