@@ -6,64 +6,45 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/ico" href="/img/favicon.ico">
 </head>
+
 <body>
 <header>
-    <h1><b>Подробнее о консолях</b><img src="logo.png"></h1>
     <nav>
-        <ul>
-            <a href="#Console_1">Playstation</a> | <a href="#Console_2">XBOX</a> | <a href="#Console_3">Nintendo</a>
-            <div class="back_to_main"><a href="index.html" class="button_selection" >Вернуться на главную</a></div>
-        </ul>
+    <p><h1><b>Подробнее о консолях</b></h1>
+        <p><a href="#Console_1">Playstation</a> | <a href="#Console_2">XBOX</a> | <a href="#Console_3">Nintendo</a></p>
     </nav>
 </header>
+
+<div class="ccd"><a href="index.html" class="ddott" >Вернуться на главную</a></div>
+
 <main>
 <div class="PlayStation">
     <u><h1 id="Console_1"><b>PlayStation</b></h1></u>
-    <p><img src="/img/PS_Title.png" alt="Так, что-то не так"
-            height="200" width="200"></p>
+    <p><div class="img-playstation"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/PlayStation_5_and_DualSense_with_transparent_background.png" alt="Так, что-то не так"
+            height="560" width="407"></div>
     <p><a href="https://www.playstation.com" rel="external" target="_blank"><cite>PlayStation</cite></a></p>
     <h2><pre><br>Консоли от компании Sony
             (Нынешнее поколение - <em>PlayStation5 <abbr>"PS5"</abbr>)</em></pre>
-        <!-- i - дочерний к p -->
-        <style>
-           DIV I {
-            color: black;
-           }
-           P > I {
-            color: blue;
-           }
-           B + I {
-                color: red;
-           }
-          </style>
-        <blockquote><p>"<i>PlayStation 5</i>, вне всякого сомнения,
-            соответствует моим ожиданиям от нового поколения,
-            а в будущем она может их даже преодолеть.
-            Первичные впечатления от высокого фреймрейта и <b>трассировки лучей</b> - <i>прекрасные,
-            при этом скорость загрузки также сильно радует</i>.
-            Новые элементы интерфейса, включая вкладки с активностями
-            и центр управления, помогают делать привычные вещи быстрее и удобнее,
-            а также открывают дополнительные возможности.
-            Консоли есть куда расти - например,
-            в отношении облачных сохранений и расширения системного накопителя.
-            Надеюсь, что с течением времени эти моменты будут исправлены".</p></blockquote></h2>
+    </h2>
     <h3><i>Предыдущие поколения</i>
-        <ol start="1">
+        <lu start="1">
             <li>PlayStation 4 Pro</li>
             <li>PlayStation 4</li>
             <li>PlayStation 3</li>
             <li>PlayStation 2</li>
             <li>PlayStation 1</li>
-        </ol>
+        </lu>
     </h3>
 </div>
-<section class="Xbox">
+
+<div class="Xbox">
     <u><h1 id="Console_2"><b>XBOX</b></h1></u>
-    <img src="/img/XBOX_Title.png" alt="Так, что-то не так"
-         width="200" height="200">
+    <div class="img-xbox">
+        <img src="/img/XBOX_Title.png" alt="Так, что-то не так" height="560" width="407">
+    </div>
     <p><a href="https://www.xbox.com/ru-RU/" rel="external" target="_blank">XBOX</a></p>
     <h2><pre><br>Консоли от компании Microsoft
-            (Нынешнее поколение - <em>XBOX series X/S</em>)</br></pre></h2>
+            (Нынешнее поколение - <em>XBOX series X/S</em>)</pre></h2>
     <h3><i>Предыдущие поколения</i>
         <ol start="1">
             <li>Xbox One<ul>
@@ -74,14 +55,15 @@
             <li>Xbox</li>
         </ol>
     </h3>
-</section>
-<article class="Nintendo">
+</div>
+
+<div class="Nintendo">
     <u><h1 id="Console_3"><b>Nintendo</b></h1></u>
-    <img src="/img/Nintendo_Title.png" alt="Так, что-то не так"
-         width="200" height="200">
+    <div class="img-nintendo"><img src="https://www.pngall.com/wp-content/uploads/2/Nintendo-Switch-PNG.png" alt="Так, что-то не так"
+                               ></div>
     <p><a href="https://www.nintendo.ru" rel="external" target="_blank"><site>Nintendo</site></a></p>
     <h2><pre><br>Консоли от компании Nintendo
-            (Нынешнее поколение - <em>Nintendo Switch</em>)</br></pre></h2>
+            (Нынешнее поколение - <em>Nintendo Switch</em>)</pre></h2>
     <h3><i>Предыдущие поколения</i>
         <dl>
             <dt>Wii U</dt>
@@ -100,16 +82,13 @@
             <dd>Дата выхода: 1983</dd>
         </dl>
     </h3>
-    <aside>
-        <p>Честно говоря, играл в Nintendo 1 раз :)</p>
-    </aside>
-</article>
+</div>
     <style>
         footer{
             background: #4e54c8;
             background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
         }
-        </style>
+    </style>
     <footer>
     <adress>
         Для уточнения деталей -
