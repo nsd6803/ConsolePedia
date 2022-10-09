@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ConsolePedia</title>
+  <link rel="stylesheet" href="forma.css">
+  <link rel="icon" type="image/ico" href="/img/favicon.ico">
+</head>
+<body>
+<h1>Отдай мне свой фидбек!!!!</h1>
+<form method="post">
+  <fieldset>
+  <legend>Форма для могущественных существ</legend>
+    <p><b>Расскажите о себе и о вашей любимой консоли для сбора статистики</b></p>
+    <p> <label name="Name">ФИО*<input type="text" placeholder="Иванов Иван Иванович" required></label></p>
+    <p><label name="Birth">Дата рождения*<input type="date" required></label></p>
+    <p><label>Контактный телефон<input type="tel"
+                                       pattern="[0-9]{11}"
+                                       placeholder="8**********"
+                                       aria-label="3-digit area code"
+                                       size="7">
+    </label></p>
+    <p><label>Эл. почта*<input type="email" placeholder="****@***.**" required></label></p>
+    <p><label>Пароль???<input type="password" placeholder="*********" minlength="8" maxlength="25"></label></p>
+    <fieldset>
+    <p><b>На какой консоли вы играете?</b></p>
+    <p><label>PlayStation<input type="checkbox" checked="checked"></label></p>
+    <p><label>Xbox<input type="checkbox"></label></p>
+    <p><label>Nintendo<input type="checkbox"></label></p>
+    <p><label>Я ПК-боярин<input type="checkbox"></label></p>
+      </fieldset>
+    <fieldset>
+    <p><b>Где вам удобнее играть?</b></p>
+    <p><label>PlayStation<input type="radio" name="answer" value="a1"></label></p>
+    <p><label>Xbox<input type="radio" name="answer" value="a2"></label></p>
+    <p><label>Nintendo<input type="radio" name="answer" value="a3"></label></p>
+    <p><label>Я ПК-боярин<input type="radio" name="answer" value="a4"></label></p>
+      </fieldset>
+    <p><label for="place-to-play">В какое время и месте вы играете?</label></p>
+    <p><select name="place" id="place-to-play" size="3" required multiple>
+      <option>Дома после работы/учебы</option>
+      <option>Все свободное время, что есть</option>
+      <option>В дороге на работу/учебу</option>
+      <option>На свежем воздухе</option>
+      <option>Изредка играю от скуки</option>
+      <option>Никогда не играю</option>
+    </select></p>
+    <textarea cols="75" rows="7" maxlength="200" minlength="0" placeholder="Сделайте приятно разработчику" required></textarea>
+    <p><input type="submit"></p>
+  </fieldset>
+</form>
+<div class="ccd">
+  <a href="index.html" class="ddott" >Вернуться на главную</a>
+</div>
+</body>
+</html>
