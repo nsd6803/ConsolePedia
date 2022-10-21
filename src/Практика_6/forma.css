@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  color: white;
+}
+
+::placeholder {
+  color:gray;
+}
+
+input{
+vertical-align: middle;
+  line-height: 10px;
+}
+
+input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=email] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=password] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=tel] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=checkbox] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=radio] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+select {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+input[type=submit] {
+    position: relative;
+    left: 43%;
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+fieldset{
+    vertical-align: middle;
+    line-height: 30px;
+    padding:5px;
+}
+
+.ccd {
+    height: 95px;
+    overflow: hidden;
+    width: 60%;
+    margin:0 auto;
+    position: relative;
+    bottom: 0px;
+    top: 20px;
+    left: 0px;
+}
+
+a.ddott {
+    margin:0 auto;
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    width: 24%;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 100px 0 #FFF,1px 76px 10px #000;
+    color: #FFF;
+    background: #7b68ee;
+    border-right: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+}
+a.ddott:hover {
+    text-shadow: 0 50px 0 #FFF, 1px 51px 20px #FFF;
+    margin-top: -50px;
+    height: 100px;
+    background: #222;
+}
