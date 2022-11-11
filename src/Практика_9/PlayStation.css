@@ -22,7 +22,7 @@ background: white;
   color: #ffffff;
   size-font: 13;
   text-align:center;
-  overflow: auto  ;
+  overflow: hidden  ;
   color: white;
 
 }
@@ -32,14 +32,14 @@ position: fixed;
 width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;ь
+  align-items: center;
   justify-content: space-between;
   background-color: #00BAF0;
 background: #0374b8;
   color: #FFF;
   height: 50px;
   padding: 1em;
-  z-index: 5;
+  z-index: 3;
 
 }
 
@@ -49,7 +49,7 @@ background: #0374b8;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  z-index: 5;
+  z-index: 3;
 }
 
 .menu > li {
@@ -167,8 +167,9 @@ color: black;
   padding: 40px 0;
   margin-top: 50px;
   background: #0067a5;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+
 }
 
 .container .box
@@ -351,7 +352,7 @@ color: black;
   right: 0;
   top: 0;
   transform-origin: center;
-  trsnsform: scale(1) translateZ(0);
+  transform: scale(1) translateZ(0);
   transition:
     filter 200ms linear,
     transform 200ms linear;
@@ -446,6 +447,7 @@ visibility: hidden;
 
 .boxx:hover::before {
     visibility: visible;
+
 }
 .boxx:hover::after {
     visibility: visible;
@@ -470,7 +472,7 @@ visibility: hidden;
 	padding: 50px 40px;
 	border-radius: 8px;
 	z-index: 2;
-	display: flex;
+	display: flex; ;
 	flex-direction: column;
 	  display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -479,6 +481,8 @@ visibility: hidden;
       max-width: var(--width-container);
 
 }
+
+
 
 @media(min-width: 540px){
   .eternity{
@@ -580,4 +584,102 @@ footer{
   text-align:center;
   vertical-align: middle;
 background: #0374b8;
+}
+
+.flip_card {
+  text-align: center;
+  width: 320px;
+  margin: 20px auto;
+  -webkit-perspective: 1200;
+  perspective: 1200;
+  -moz-transform: perspective(1200px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.flipper {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+.front, .back {
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px 20px 20px;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  background: white;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #f5f5f5;
+}
+i {
+  color: #DCB8B2;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+p {
+  font-size: 14px;
+  line-height: 25px;
+}
+.header h3 {
+  color: #18191a;
+}
+.front p {
+  color: #818285;
+}
+.back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  background: #DCB8B2;
+  color: white;
+}
+.back h3 {
+  position: relative;
+}
+.back h3:after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  background: white;
+  margin-left: -25px;
+}
+.back p {
+  padding-top: 15px;
+}
+.flip_card:hover .flipper{
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
