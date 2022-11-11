@@ -162,10 +162,11 @@ margin-top: 100px;
 position: relative;
   display: inline-grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 75%;
   grid-column-gap: var(--spacing-l);
   grid-row-gap: var(--spacing-l);
   max-width: var(--width-container);
-  width: 800px;
+
 }
 
 
@@ -236,7 +237,8 @@ text-align:center;
 @media(max-width: 810px){
   .card-grid{
     grid-template-columns: repeat(1, 1fr);
-    width: 200px;
+    grid-template-rows: repeat(3, 200px);
+    width: 100%;
   }
   header{
   height: 100%;
