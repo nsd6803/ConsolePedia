@@ -15,8 +15,8 @@ body{
 }
 
 header{
-height: 100vh;
-width: 100vw;
+height: 100%;
+width: 100%;
 background: white;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
   color: #ffffff;
@@ -32,7 +32,7 @@ position: fixed;
 width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center;ь
   justify-content: space-between;
   background-color: #00BAF0;
 background: #0374b8;
@@ -159,14 +159,16 @@ color: black;
 
 .container
 {
-    z-index:1;
+  z-index:1;
   display: flex;
   justify-content: center;
   align-items: middle;
   flex-wrap: wrap;
   padding: 40px 0;
-  margin-top: 100px;
-  background: white;
+  margin-top: 50px;
+  background: #0067a5;
+  height: 100vh;
+  width: 100%;
 }
 
 .container .box
@@ -238,83 +240,6 @@ color: black;
   background: linear-gradient(315deg, #1e1d23, #9ea2a1)
 }
 
-.container .box span
-{
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 5;
-  pointer-events: none;
-}
-
-.container .box span::before
-{
-  content:'';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  opacity: 0;
-  transition: 0.1s;
-  animation: animate 2s ease-in-out infinite;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08)
-}
-
-.container .box:hover span::before
-{
-  top: -50px;
-  left: 50px;
-  width: 100px;
-  height: 100px;
-  opacity: 1;
-}
-
-.container .box span::after
-{
-  content:'';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  opacity: 0;
-  transition: 0.5s;
-  animation: animate 2s ease-in-out infinite;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  animation-delay: -1s;
-}
-
-.container .box:hover span:after
-{
-  bottom: -50px;
-  right: 50px;
-  width: 100px;
-  height: 100px;
-  opacity: 1;
-}
-
-@keyframes animate
-{
-  0%, 100%
-  {
-    transform: translateY(10px);
-  }
-
-  50%
-  {
-    transform: translate(-10px);
-  }
-}
 
 .container .box .content
 {

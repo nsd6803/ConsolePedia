@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -15,13 +15,12 @@ body{
 
 header{
 height: 100vh;
-width: 100vw;
+width: 100%;
   background: #4e54c8;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
   color: #ffffff;
-  size-font: 13;
   text-align:center;
-  overflow: auto  ;
+  overflow: hidden  ;
   color: white;
 }
 
@@ -148,88 +147,109 @@ width: 100%;
 
 .Main_title{
 position: relative;
-top: 30%;
+margin-top: 100px;
 }
 
-.grid-container {
-  width: 50%;
-  margin: 0 auto;
-  display: inline-flex;
+
+.hero-section{
+  background: #6c81ce;
+  justify-content: center;
+  top: 25%;
+}
+
+.card-grid{
+  justify-content: center;
+position: relative;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 800px;
+}
+
+
+.card{
   list-style: none;
-  justify-content: space-between;
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-
-.location-listing {
   position: relative;
-  width: 30%;
+    width: 90%;
+    margin: 20px;
 }
 
-.location-image {
-  line-height: 0;
-  overflow: hidden;
+.card:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+
 }
 
-.location-image img {
-
-  filter: blur(0px);
-  transition: filter 0.3s ease-in;
-  transform: scale(1.1);
-}
-
-.location-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-  z-index: 4;
+.card__background{
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
   position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition:
+    filter 200ms linear,
+    transform 200ms linear;
+}
+
+.card:hover .card__background{
+  transform: scale(1.05) translateZ(0);
+}
+
+.card__content{
+
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+}
+
+.card__category{
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+  text-transform: uppercase;
+}
+
+.card__heading{
+text-align:center;
+  color: white;
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  word-spacing: 100vw;
+
+}
+
+.card-grid:hover > .card:not(:hover) .card__background{
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+@media(max-width: 810px){
+  .card-grid{
+    grid-template-columns: repeat(1, 1fr);
+    width: 200px;
+  }
+  header{
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity .5s;
-  background: rgba(90,0,10,0.4);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.location-listing:hover .location-title {
-  opacity: 1;
-}
-
-.location-listing:hover .location-image img {
-  filter: blur(2px);
-}
-
-
-/* for touch screen devices */
-@media (hover: none) {
-  .location-title {
-    opacity: 1;
-  }
-  .location-image img {
-    filter: blur(2px);
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    color: #ffffff;
+    text-align:center;
+    overflow: hidden  ;
+    color: white;
   }
 }
 
-.Console_nav{
-position: relative;
-top: 30%;
-}
-
-nav{
-position: relative;
-text-align:center;
-vertical-align: middle;
-line-height: 300px;
-
-}
 h1{
 text-align:center;
 padding: 30px;
@@ -241,209 +261,186 @@ color: white;
  flex-direction: column;
 }
 
-.box{
-position: relative;
-top: -66%;
-left:79%;
-transform: translate(-50%; -50%);
-width: 240px;
-height: 40px;
-}
-
-.notifications{
-width: 40px;
-height: 40px;
-background: #fff;
-border-radius: 20px;
-box-sizing: border-box;
-font-size: 1px;
-text-align: center;
-box-shadow: 0 2px 5px rgba(0, 0, 0, .2)
-}
-
-.notifications:hover{
-width: 240px;
-height: 60px;
-text-align: left;
-padding: 0 15px;
-border-bottom-left-radius: 0;
-border-bottom-right-radius: 0;
-background: #6a5acd;
-overflow: hidden;
--webkit-transition: all 0.5s ease-in-out;
--moz-transition: all 0.5s ease-in-out;
--o-transition: all 0.5s ease-in-out;
-transition: all 0.5s ease-in-out;
-}
-
-.notifications .fas{
-color: #cecece;
-line-height: 40px;
-font-size: 20px;
-}
-
-.notifications:hover .fas{
-color: #cecece;
-line-height: 60px;
-font-size: 0px;
-}
-
-.notifications .num{
-position: absolute;
-top: 0;
-right: -5px;
-width: 25px;
-height: 25px;
-border-radius: 50%;
-background: #6a5acd;
-color: #fff;
-line-height: 25px;
-font-family: sans-serif;
-text-align: center;
-display: none;
-}
-
-.notifications:hover .num{
-position: relative;
-background: transparent;
-color: #fff;
-font-size: 15px;
-top: 5px;
-display: inline-block;
-
-}
-
-.notifications:hover .num:after{
-content: 'Подробнее';
-
-}
-
-.notify{
-    position: absolute;
-    left: 0;
-    top: 60px;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    padding: 20px;
-    box-sizing: border-box;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    display: none;
-    font-size: 15px;
-
-}
-
-.notifications:hover .notify{
-    display: block;
-
-}
-
-.notify li{
-list-style: none;
-border-bottom: 1px solid rgba(0,0,0,.1);
-padding: 8px 0;
-display: flex;
-color: black;
-
-}
-
-.notify li .text{
-position: relative;
-font-family: sans-serif;
-top: 3px;
-cursor: pointer;
-}
-
-.notify li:last-child{
-border-bottom: none;
-}
-
 
 img {
 max-width: 100%;
 overflow:hidden;
 }
 
-.img-playstation{
-float:left;
-margin-right:1rem;
-}
-
-.img-xbox{
-float:right;
-margin-right:1rem;
-}
-
-.img-nintendo{
-float:left;
-margin-right:1rem;
-}
 
 .PlayStation{
-height: 100vh;
+display:flex;
+flex-direction:column;
+background: #33659a;
+overflow: hidden;
 width: 100vw;
-background: #0374b8;
-overflow: auto;
+justify-content: center;
+align-items: center;
 }
+
+.PS_tag{
+position: relative;
+width: 620px;
+height: 300px;
+display: table;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+color: white;
+background:#0374b8;
+font-size: 24px;
+text-align: justify;
+margin-top: 15px;
+}
+
+.PlayStation iframe{
+float: left;
+margin: 20px;
+}
+
+#Console_1{
+font-size: 50px;
+margin-top: 10px;
+}
+
 
 .Xbox{
+display:flex;
+flex-direction:column;
 text-align: right;
-background: #1d8615;
-height: 100vh;
+background: #0b100b;
+overflow: hidden;
 width: 100vw;
-overflow: auto;
+justify-content: center;
+align-items: center;
 }
+
+.Xbox iframe{
+float: right;
+margin: 20px;
+}
+
+.X_tag{
+position: relative;
+width: 650px;
+height: 300px;
+display: table;
+justify-content: center;
+text-align: justify;
+align-items: center;
+border-radius: 10px;
+color: white;
+background:#1d8615;
+font-size: 24px;
+float: right;
+margin-top: 15px;
+}
+
+#Console_2{
+font-size: 50px;
+
+}
+
 
 .Nintendo{
-background: #ed404f;
-height: 100vh;
+display:flex;
+flex-direction:column;
+background: #20bde2;
+height: 100%;
+width: 100%;
+overflow: hidden;
 width: 100vw;
-overflow: auto;
+justify-content: center;
+align-items: center;
 }
 
-footer{
-color: black;
+.Nin_tag{
+position: relative;
+width: 620px;
+height: 300px;
+display: table;
+justify-content: center;
+align-items: center;
+text-align: justify;
+border-radius: 10px;
+color: white;
+background:#ed404f;
+font-size: 24px;
+margin-top: 15px;
 }
 
-.ccd {
+.Nintendo iframe{
+float: left;
+margin: 20px;
+}
 
-    height: 95px;
-    overflow: hidden;
-    width: 60%;
-    margin:0 auto;
-    position: relative;
-    font-family: "Poppins", sans-serif;
+#Console_3{
+font-size: 50px;
+
+}
+
+@media(min-width: 1251px){
+.PlayStation{
+height: 100%;
+width: 100%;
+overflow: hidden;
+background-image: url(https://mobimg.b-cdn.net/v3/fetch/2e/2e1e61b03654bb849a47685fa748a2f0.jpeg?w=1470&r=0.5625);
+background-size: 100% auto;
+display: block;
+}
+.Xbox{
+text-align: right;
+height: 100%;
+width: 100%;
+overflow: hidden;
+background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1612599263_62-p-ukrashenie-dlya-intro-na-zelenom-fone-84.jpg);
+background-size: 100% auto;
+display: block;
+}
+.Nintendo{
+height: 100%;
+width: 100%;
+overflow: hidden;
+background-image: url(https://media.zicxa.com/749932);
+background-size: 100% auto;
+display: block;
+}
 }
 
 .ccd_consoles {
     height: 95px;
     overflow: hidden;
     width: 60%;
-    margin:0 auto;
+    margin:50px;
     position: relative;
     font-family: "Poppins", sans-serif;
-    bottom: -180px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px;
 }
 
-.ccd_xbox {
-     height: 95px;
-     overflow: hidden;
-     width: 60%;
-     margin:0 auto;
-     position: relative;
-     font-family: "Poppins", sans-serif;
-     bottom: -180px;
-     left: 15%;
- }
+.ccd_consoles_x {
+    height: 95px;
+    overflow: hidden;
+    width: 60%;
+    margin:50px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px;
+    bottom:0%;
+    clear:both
+}
 
 a.ddott {
-    margin:0 auto;
-    display: block;
+position:relative;
+    top: -24px;
     line-height: 50px;
     height: 50px;
-    width: 24%;
+    width: 300px;
     overflow: hidden;
     text-align: center;
     text-decoration: none;
@@ -460,25 +457,56 @@ a.ddott {
     transition: all 0.3s ease-in-out;
 
 }
+
+a.ddott_x {
+
+position:relative;
+    top: -24px;
+    line-height: 50px;
+    height: 50px;
+    width: 300px;
+    display: relative;
+    bottom: top= 25px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 100px 0 #FFF,1px 76px 10px #000;
+    color: #FFF;
+    background: #7b68ee;
+    border-right: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
 a.ddott:hover {
     text-shadow: 0 50px 0 #FFF, 1px 51px 20px #FFF;
     margin-top: -50px;
     height: 100px;
     background: #222;
+
 }
 
-.ccd_xbox a.ddott:hover {
+a.ddott_x:hover {
     text-shadow: 0 50px 0 #FFF, 1px 51px 20px #FFF;
+    text-align: center;
     margin-top: -50px;
     height: 100px;
     background: #222;
+
 }
 
 .PlayStation a.ddott:hover {
-    text-shadow: 0 50px 0 #FFF, 1px 51px 20px #FFF;
-    margin-top: -50px;
+    text-shadow: 0 50px 0 #222, 1px 51px 20px #222;
+
     height: 100px;
-    background: #a2abbc;
+    background: white;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
 }
 
 .Nintendo a.ddott:hover {
@@ -486,6 +514,8 @@ a.ddott:hover {
     margin-top: -50px;
     height: 100px;
     background: #00cbe7;
+    border-right: 2px solid #fd463b;
+    border-left: 2px solid #fd463b;
 }
 
 
@@ -546,7 +576,8 @@ list-style-type:none;
 .C_R{
   grid-area: CopyRights;
   text-align: middle;
-    margin: 20px;
+    margin: 5px;
+  background: #7442c8;
 }
 
 @media (max-width: 2560px) {

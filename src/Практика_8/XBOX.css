@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.main-head {
+  grid-area: header;
+  border: 1px solid black;
+    border-radius: 10px;
+    background: #131613;
+    font-size: 40px;
+}
+.content {
+  grid-area: content;
+  border: 1px solid black;
+    border-radius: 10px;
+    background: #131613;
+}
+.main-nav {
+
+  grid-area: nav;
+  border: 1px solid black;
+    border-radius: 10px;
+    background: #131613;
+}
+
+.main-nav li{
+display:inline;
+margin: 20px;
+}
+
+.side {
+  grid-area: sidebar;
+  border: 1px solid black;
+    border-radius: 10px;
+    background: #131613;
+        vertical-align: middle;
+        line-height: 100px;
+}
+.ad {
+  grid-area: ad;
+  border: 1px solid black;
+    border-radius: 10px;
+    background: #131613;
+}
+.main-footer {
+background: #131613;
+  grid-area: footer;
+  border: 1px solid black;
+  border-radius: 10px;
+
+}
+
+
+.wrapper {
+background: #039b11;
+width: 100%;
+height: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "ad"
+    "footer";
+}
+
+@media (max-width: 2560px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+      "header header  header"
+      "sidebar    nav        ad"
+      "sidebar   content      ad"
+      "footer footer  footer";
+  }
+  nav ul {
+         flex-direction: inline-flex;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "sidebar"
+      "ad"
+      "footer"
+   }
+   nav ul {
+     flex-direction: column;
+   }
+}
