@@ -578,7 +578,7 @@ list-style-type:none;
 .C_R{
   grid-area: CopyRights;
   text-align: middle;
-    margin: 5px;
+    margin: 0px;
   background: #7442c8;
 }
 
