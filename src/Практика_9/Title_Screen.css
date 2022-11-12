@@ -412,29 +412,26 @@ display: block;
 .ccd_consoles {
     height: 95px;
     overflow: hidden;
-    width: 60%;
-    margin:50px;
+    width: 87%;
     position: relative;
     font-family: "Poppins", sans-serif;
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:50px;
+    margin:7%;
 }
 
 .ccd_consoles_x {
     height: 95px;
     overflow: hidden;
-    width: 60%;
-    margin:50px;
+    width: 87%;
     position: relative;
     font-family: "Poppins", sans-serif;
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:50px;
-    bottom:0%;
-    clear:both
+    margin:7%;
+    margin-top: 27%;
 }
 
 a.ddott {
