@@ -5,39 +5,211 @@
   <title>ConsolePedia</title>
   <link rel="stylesheet" href="XBOX.css">
   <link rel="icon" type="image/ico" href="/img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" />
 </head>
 <body>
-<div class="wrapper">
-  <header class="main-head"><a href="Main.html">ConsolePedia</a></header>
-  <nav class="main-nav">
-    <ul class="menu">
-      <li><a href="#">О консоли и компании</a></li>
-      <li><a href="#">Хронология консолей</a></li>
-      <li><a href="#">Эксклюзивы</a></li>
-    </ul>
-  </nav>
-  <article class="content">
-    <h1>XBOX</h1>
-    <p>Xbox — игровая приставка, разработанная и производившаяся компанией Microsoft.
-      Впервые поступила в продажу 15 ноября 2001 года. Это первое самостоятельное выступление компании Microsoft на рынке игровых приставок после совместного с компанией
-      SEGA проекта по разработке версии операционной системы Windows CE для игровой приставки Dreamcast.
-      Microsoft Xbox напрямую конкурировала с Sony PlayStation 2 и Nintendo GameCube.</p>
-  </article>
-  <aside class="side">
+<header>
+  <section class="top-nav">
+    <div>
+      <a href="Main.html">ConsolePedia</a>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
     <ul class="menu">
       <li><a href="About_me.html">Обо мне</a></li>
-      <li>О проекте</li>
       <li><a href="forma.html">Получить фидбек от разраба</a></li>
     </ul>
-  </aside>
-  <div class="ad"><img width="290" height="230" src="https://www.meme-arsenal.com/memes/67dd7ead7733b7ee65efc70f066e6e6d.jpg">
-    <img width="290" height="230" src="https://cybersport.metaratings.ru/storage/images/fc/13/fc1313ea3b1ae352b3c03e22ae3c5a29.jpg">
-    <img width="290" height="230" src="http://i.mycdn.me/i?r=AzFIxPtkV78jcmdRfpoIOyaJy7fJMYHhXivMtmfe5e-PkzO7EuABt8t6j6ROsg0SwU4"></div>
-  <footer class="main-footer">    <adress>
-    Для уточнения деталей -
-    <a href="mailto:nsd6803@mail.ru">Моя почта</a>.
-  </adress>
-    <p><small>@Все права находятся под защитой Будды, Иисуса и пророка Мухаммеда</small></p></footer>
-</div>
+  </section>
+  <div class="container">
+    <div class="box">
+      <div class="content">
+        <h2>О компании</h2>
+        <p>Узнайте как одна из самых популярных консолей в мире обрела свою славу.</p>
+        <a href="#Company">Перейти</a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="content">
+        <h2>Консоли</h2>
+        <p>Ознакомьтесь с историей консоли.</p>
+        <a href="#History">Перейти</a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="content">
+        <h2>Эксклюзивы</h2>
+        <p>Узнайте какие уникальные игры вас ждут вместе с PlayStation.</p>
+        <a href="#Exclusives">Перейти</a>
+      </div>
+    </div>
+    <script src="XBOX.js"></script>
+  </div>
+
+</header>
+<main>
+  <section id="Company">
+    <h1>О компании</h1>
+
+    <img src="https://img.stereo.ru/v3/images/72/256da48-5cc2-40b6-b7fa-b3336ffb65e8.jpeg">
+    <p>Компания Sony Interactive Entertainment (SIE) является мировым лидером в области интерактивного развлекательного программного обеспечения. Компания представляет бренд и семейство продуктов и услуг PlayStation®. PlayStation является инноватором на рынке с момента запуска первой версии PlayStation в Японии в 1994 г.
+
+      Семейство продуктов и услуг PlayStation включает PlayStation®5, PlayStation®4, PlayStation®VR, PlayStation™Store, PlayStation®Plus и программное обеспечение PlayStation от PlayStation Studios.
+
+      Штаб-квартира компании находится в Сан-Матео, штат Калифорния. SIE является дочерней компанией Sony Group Corporation и выполняет глобальные функции. Штаб-квартиры компании расположены в Калифорнии, Лондоне и Токио.</p>
+
+  </section>
+  <section class="hero-section" id="History">
+    <h1>Консоли</h1>
+    <p>C декабря 94 года компания Sony выскала как портативные, так и стационарные консоли. Новейшнее поколение, PlayStation 5, вышла в 2020 году.</p>
+    <div class="card-grid">
+      <a class="card" href="#">
+        <div class="card__background" style="background-image: url(https://trashbox.ru/files/1401819_f9cb57/0.webp.png)"></div>
+        <div class="card__content">
+          <p class="card__category">PlayStation 5</p>
+          <h3 class="card__heading">Play With No Limits</h3>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <div class="card__background" style="background-image: url(https://all-technic.ru/wp-content/uploads/2022/01/PS4-PRO-1-TB-KONSOLA-PLAYSTATION-4-PRO-ZESTAW-Gry-w-zestawie-nie.jpg)"></div>
+        <div class="card__content">
+          <p class="card__category">PlayStation 4 Pro</p>
+          <h3 class="card__heading">This is 4 the Players</h3>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <div class="card__background" style="background-image: url(https://ps5hits.com/wp-content/uploads/2019/01/Sony-PlayStation-4-22.jpg)"></div>
+        <div class="card__content">
+          <p class="card__category">PlayStation 4</p>
+          <h3 class="card__heading">For The Players</h3>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <div class="card__background" style="background-image: url(https://greatgamer.ru/images/news/10.2019/11/news_10095.jpg)"></div>
+        <div class="card__content">
+          <p class="card__category">PlayStation 3</p>
+          <h3 class="card__heading">This Is Living</h3>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <div class="card__background" style="background-image: url(https://i.pinimg.com/originals/0b/9a/8d/0b9a8d672e01c3981f825a7b01d43b62.jpg)"></div>
+        <div class="card__content">
+          <p class="card__category">PlayStation 2</p>
+          <h3 class="card__heading">Live In Your World, Play In Ours</h3>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <div class="card__background" style="background-image: url(https://landofgames.ru/uploads/posts/2020-09/1598972622_2.jpg)"></div>
+        <div class="card__content">
+          <p class="card__category">PlayStation</p>
+          <h3 class="card__heading">Wherever, Whenever, Forever</h3>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <div class="card__background" style="background-image: url(https://blenderartists.org/uploads/default/optimized/4X/f/c/9/fc98b34646e6021a20c2d030d8d5ef7e21bef2fa_2_1024x752.jpeg)"></div>
+        <div class="card__content">
+          <p class="card__category">PlayStation Portable</p>
+          <h3 class="card__heading">Step Your Game Up</h3>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <div class="card__background" style="background-image: url(https://games.mail.ru/hotbox/content_files/news/2021/05/31/ec1b5bad941b42438bd5108dd465be5f.jpg)"></div>
+        <div class="card__content">
+          <p class="card__category">PlayStation Vita</p>
+          <h3 class="card__heading">Never Stop Playing</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="Section_3" id="Exclusives">
+    <h1>Эксклюзивы</h1>
+    <p>Игры, доступные только на консолях PlayStation, позволят ощутить игровой процесс с новейшими технологиями.</p>
+    <div class="ex-section">
+      <div class="boxx">
+        <div class="eternity">
+          <div class="card__background" style="background-image: url(https://i.playground.ru/e/kkY-pluQcq3MUlP23fmwvg.jpeg)"></div>
+          <div class="card__content">
+            <p class="card__category">God of War Ragnarok</p>
+          </div>
+        </div>
+      </div>
+      <div class="boxx">
+        <div class="eternity">
+          <div class="card__background" style="background-image: url(https://i.playground.ru/e/IZI74-mgs5RxqaeoJ_JFEg.jpeg)"></div>
+          <div class="card__content">
+            <p class="card__category">Demon Souls</p>
+          </div>
+        </div>
+      </div>
+      <div class="boxx">
+        <div class="eternity">
+          <div class="card__background" style="background-image: url(https://games.mail.ru/hotbox/content_files/gallery/2020/06/10/4dbb4543840041ca9a4a09c07d065876.jpg)"></div>
+          <div class="card__content">
+            <p class="card__category">Ghostwire Tokyo</p>
+          </div>
+        </div>
+      </div>
+      <div class="boxx">
+        <div class="eternity">
+          <div class="card__background" style="background-image: url(https://i.playground.ru/e/TFJTWOrawOEIGcqrPn9VIw.jpeg)"></div>
+          <div class="card__content">
+            <p class="card__category">Ratcher & Clank: Rift Apart</p>
+          </div>
+        </div>
+      </div>
+      <div class="boxx">
+        <div class="eternity">
+          <div class="card__background" style="background-image: url(https://blog.ru.playstation.com/tachyon/sites/11/2021/09/Marvels-Spider-Man-2-Featured-image.jpg)"></div>
+          <div class="card__content">
+            <p class="card__category">Spider-Man 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="boxx">
+        <div class="eternity">
+          <div class="card__background" style="background-image: url(https://media.kg-portal.ru/games/h/horizon2forbiddenwest/posters/horizon2forbiddenwest_1.jpg)"></div>
+          <div class="card__content">
+            <p class="card__category">Horizon: Forbidden West</p>
+          </div>
+        </div>
+      </div>
+      <div class="boxx">
+        <div class="eternity">
+          <div class="card__background" style="background-image: url(https://pbs.twimg.com/media/FGNgJR2WQAAm2vD?format=jpg&name=medium)"></div>
+          <div class="card__content">
+            <p class="card__category">Returnal</p>
+          </div>
+        </div>
+      </div>
+      <div class="boxx">
+        <div class="eternity">
+          <div class="card__background"></div>
+          <div class="card__content">
+            <p class="card__category">И многое другое...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <ul class="wrapper">
+    <li class="icon github">
+      <span class="tooltip">Github</span>
+      <a href="https://github.com/nsd6803" rel="external" target="_blank"><span><i class="fab fa-github"></i></span></a>
+    </li>
+    <li class="icon vk">
+      <span class="tooltip">VK</span>
+      <a href="https://vk.com/vitamin____c" rel="external" target="_blank"><span><i class="fab fa-vk"></i></span></a>
+    </li>
+    <li class="icon telegram">
+      <span class="tooltip">Telegram</span>
+      <a href="https://t.me/PuUGGY" rel="external" target="_blank"><span><i class="fab fa-telegram"></i></span></a>
+    </li>
+  </ul>
+</footer>
 </body>
 </html>
