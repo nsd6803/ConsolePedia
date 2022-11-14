@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Consoles</title>
-    <link rel="stylesheet" href="Title_Screen.css">
+    <link rel="stylesheet" href="./CSS/Title_Screen.css">
     <link rel="icon" type="image/ico" href="/img/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="CSS/animate.css">
+    <script src="JS/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body>
@@ -20,56 +25,56 @@
         </label>
         <ul class="menu">
             <li><a href="About_me.html">Обо мне</a></li>
-            <li><a href="forma.html">Получить фидбек от разраба</a></li>
+            <li><a href="forma.html">Задать вопрос разработчику</a></li>
         </ul>
     </section>
-    <div class="Main_title">
+    <div class="Main_title wow fadeInDown">
         <p><b><font size="10" color="white"  >
             Подробнее о консолях
         </font></b></p>
     </div>
 
     <div class="card-grid">
-        <a class="card" href="#PS">
+        <a class="card wow pulse" href="#PS">
             <div class="card__background" style="background-image: url(https://images.stopgame.ru/news/2016/03/19/71TOd6O.jpg)"></div>
             <div class="card__content">
                 <h3 class="card__heading">Playstation</h3>
             </div>
         </a>
-        <a class="card" href="#XBX">
+        <a class="card wow pulse" href="#XBX">
             <div class="card__background" style="background-image: url(https://cdnb.artstation.com/p/assets/images/images/006/082/835/large/cody-zimmerman-xboxcontroller-01.jpg?1496030297)"></div>
             <div class="card__content">
                 <h3 class="card__heading">XBOX</h3>
             </div>
         </a>
-        <a class="card" href="#NIN">
+        <a class="card wow pulse" href="#NIN">
             <div class="card__background" style="background-image: url(https://img4.goodfon.ru/wallpaper/nbig/8/41/nintendo-switch-controller.jpg)"></div>
             <div class="card__content">
                 <h3 class="card__heading">Nintendo</h3>
             </div>
         </a>
     </div>
-    <script src="Title_Screen.js"></script>
+    <script src="./JS/Title_Screen.js"></script>
 </header>
 
 <main>
 <div class="PlayStation" id="PS">
     <h1 id="Console_1"><b>PlayStation</b></h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/cxXvYJyBlc4" frameborder="0" allowfullscreen></iframe>
-    <div class="PS_tag">
+    <div class="PS_tag wow fadeInDown">
         <p>Для многих людей во всем мире видеоигры являются синонимом Sony PlayStation.
         Японская компания уже более 25 лет является крупным игроком на рынке домашних консолей,
         и, похоже, в ближайшее время она никуда не денется с выпуском последней консоли PlayStation 5 в конце прошлого года.
         Нажимай на кнопку и узнай о консоли <b>ВСЕ</b>!</p>
         <p><a href="https://www.playstation.com" rel="external" target="_blank"><small><i><u>Ссылка на официальный сайт</u></i></small></a></p>
     </div>
-    <div class="ccd_consoles"><a href="Playstation.html" class="ddott" >Узнать подробнее</a></div>
+    <div class="ccd_consoles "><a href="Playstation.html" class="ddott" >Узнать подробнее</a></div>
 </div>
 
 <div class="Xbox" id="XBX">
     <h1 id="Console_2"><b>XBOX</b></h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/4eVfNSAta4U" frameborder="0" allowfullscreen></iframe>
-    <div class="X_tag">
+    <div class="X_tag wow fadeInDown">
         <p>Консоли Microsoft Xbox за два десятилетия стали неотъемлемой частью игровой индустрии.
             За это время вышло четыре поколения консолей, сделав компанию
             Microsoft одним из основных игроков в этом сегменте, наряду с Sony и Nintendo, а также подарила замечательные эксклюзивы.
@@ -82,24 +87,26 @@
 <div class="Nintendo" id="NIN">
     <h1 id="Console_3"><b>Nintendo</b></h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/f5uik5fgIaI" frameborder="0" allowfullscreen></iframe>
-    <div class="Nin_tag">
+    <div class="Nin_tag wow fadeInDown">
         <p>Компания Nintendo – культовый японский бренд, подаривший миру: NES, GameBoy и, конечно же, легендарного Марио.
             В 2019 году организация отпраздновала свое 130-летие.
             За это время компания сумела покорить индустрию консолей и видеоигр, провалиться на сторонних рынках,
             но все-таки сохранила международную популярность.
             Нажимай на кнопку и узнай о консоли <b>ВСЕ</b>!</p>
         <p><a href="https://www.nintendo.ru" rel="external" target="_blank"><small><i><u>Ссылка на официальный сайт</u></i></small></a></p>
+
     </div>
-    <div class="ccd_consoles"><a href="Nintendo.html" class="ddott" >Узнать подробнее</a></div>
+    <div class="ccd_consoles "><a href="Nintendo.html" class="ddott" >Узнать подробнее</a></div>
+
 </div>
 </main>
 <footer>
     <div class="grid-footer">
-        <div class="A_M">
+        <div class="A_M wow fadeInDown">
             <p><u>Обо Мне</u></p>
             <p>Являюсь студентом МИРЭА 2 курса на направлении "Программная Инженерия". В данный момент занимаюсь курсовой работой по созданию сайта</p>
         </div>
-        <div class="Q_L">
+        <div class="Q_L wow fadeInUp">
             <p><u>Ссылки на Полезные сайты</u></p>
             <ul>
                 <li><a href="https://stopgame.ru/blogs/topic/63832/evolyuciya_domashnih_igrovyh_konsoley_kratkaya_istoriya?ysclid=lacqi8za4g712325939" rel="external" target = "_blank">Эволюция игровых консолей</a></li>
@@ -107,7 +114,7 @@
                 <li><a href="https://www.youtube.com/user/MakarenkOFF" rel="external" target = "_blank">Новостной канал по теме</a></li>
             </ul>
         </div>
-        <div class="Sh">
+        <div class="Sh wow fadeInDown">
             <p><u>Магазины игр</u></p>
             <ul>
                 <li><a href="https://www.gamepark.ru/?ysclid=lacq8zv36r798344190" rel="external" target = "_blank">Gamepark</a></li>
@@ -116,7 +123,7 @@
                 <li><a href="https://store.steampowered.com/" rel="external" target = "_blank">Steam</a></li>
             </ul>
         </div>
-        <div class="Cnt">
+        <div class="Cnt wow fadeInUp">
             <p><u>Связаться со мной </u></p>
             <adress>
                 <p><a href="mailto:nsd6803@mail.ru">Эл. почта</a></p>
@@ -124,8 +131,9 @@
                 <p><a href="https://vk.com/vitamin____c" rel="external" target="_blank">Вконтакте</a></p>
             </adress>
         </div>
-        <div class="C_R"> <small>Copyrights @ 2022 Pug's Division All Rights Reserved</small></div>
+        <div class="C_R wow fadeInDown"> <small>Copyrights @ 2022 Pug's Division All Rights Reserved</small></div>
     </div>
 </footer>
+
 </body>
 </html>

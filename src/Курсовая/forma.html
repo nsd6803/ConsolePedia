@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>ConsolePedia</title>
-  <link rel="stylesheet" href="forma.css">
+  <link rel="stylesheet" href="./CSS/forma.css">
   <link rel="icon" type="image/ico" href="/img/favicon.ico">
+  <link rel="stylesheet" href="CSS/animate.css">
+    <script src="JS/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body>
 <header>
@@ -18,25 +23,24 @@
     </label>
     <ul class="menu">
       <li><a href="About_me.html">Обо мне</a></li>
-      <li>О проекте</li>
       <li><a href="forma.html">Получить фидбек от разраба</a></li>
     </ul>
   </section>
 </header>
 <main>
 
-  <div class="wrapper">
-    <h3>Получить фидбек</h3>
+  <div class="wrapper wow fadeInLeft">
+    <h3>Заполните форму и отправьте свой вопрос разработчику</h3>
     <form action="">
-        <input type="text" placeholder="Имя">
-        <input type="text" placeholder="Фамилия">
-        <input type="email" placeholder="Почта">
-        <input type="tel" placeholder="Телефон">
+        <input type="name" class="name wow fadeInLeft" placeholder="Имя">
+        <input type="name" class="surname wow fadeInRight" placeholder="Фамилия">
+        <input type="email" class="mail wow fadeInLeft" placeholder="Почта (обязательно)" required>
+        <input type="tel" class="tel wow fadeInRight" placeholder="Телефон">
+      <input id="problem" type="text wow fadeInLeft" class="problem" placeholder="Напишите ваше сообщение здесь (обязательно)" required>
+      <p>
+        <input class="button" type="submit">
+      </p>
     </form>
-    <input id="problem" type="text" placeholder="Напишите ваше сообщение здесь">
-    <p>
-      <button>Отправить</button>
-    </p>
   </div>
 </main>
 </body>

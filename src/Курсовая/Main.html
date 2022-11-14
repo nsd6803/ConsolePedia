@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <title>ConsolePedia</title>
-  <link rel="stylesheet" href="./Main.css">
+  <link rel="stylesheet" href="./CSS/Main.css">
   <link rel="icon" type="image/ico" href="/img/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" />
-
+  <link rel="stylesheet" href="CSS/animate.css">
 </head>
 <body>
 <div class="area" >
@@ -22,7 +22,7 @@
     </label>
     <ul class="menu">
       <li><a href="About_me.html">Обо мне</a></li>
-      <li><a href="forma.html">Получить фидбек от разраба</a></li>
+      <li><a href="forma.html">Задать вопрос разработчику</a></li>
     </ul>
   </section>
   <ul class="circles">
@@ -36,12 +36,12 @@
     <li></li>
     <li></li>
   </ul>
-  <div class="Main_title">
+  <div class="Main_title wow fadeInDown">
     <p><b><font size="6" color="white"  >
       Приветствуем на ConsolePedia, твоем путеводителе по игровым приставкам!
     </font></b></p>
   </div>
-  <div class="ccd">
+  <div class="ccd wow fadeInUp">
     <a href="Title_Screen.html" class="ddott" >Погнали!</a>
   </div>
 </div>
@@ -61,5 +61,9 @@
   </li>
 </ul>
 </footer>
+<script src="JS/wow.js"></script>
+<script>
+        new WOW().init();
+    </script>
 </body>
 </html>

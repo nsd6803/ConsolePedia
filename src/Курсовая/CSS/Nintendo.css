@@ -252,19 +252,19 @@ text-align: center;
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after
 {
-  background: linear-gradient(315deg,#00c4e3, #bcbcbc)
+  background: linear-gradient(315deg,#00fcfc, #3cbcfc)
 }
 
 .container .box:nth-child(2):before,
 .container .box:nth-child(2):after
 {
-  background: linear-gradient(315deg,#881400,#fcfcfc)
+  background: linear-gradient(315deg,#f83800,#a81000)
 }
 
 .container .box:nth-child(3):before,
 .container .box:nth-child(3):after
 {
-  background: linear-gradient(315deg,#58d854, #9ea2a1)
+  background: linear-gradient(315deg,#006800,#58d854)
 }
 
 

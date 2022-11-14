@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>ConsolePedia</title>
-  <link rel="stylesheet" href="XBOX.css">
+  <link rel="stylesheet" href="./CSS/XBOX.css">
   <link rel="icon" type="image/ico" href="/img/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" />
+  <link rel="stylesheet" href="CSS/animate.css">
+  <script src="JS/wow.js"></script>
+  <script>
+        new WOW().init();
+    </script>
 </head>
 <body>
 <header>
@@ -19,33 +24,34 @@
       <div class='menu-button'></div>
     </label>
     <ul class="menu">
+      <li><a href="Title_Screen.html">К предыдущей</a></li>
       <li><a href="About_me.html">Обо мне</a></li>
-      <li><a href="forma.html">Получить фидбек от разраба</a></li>
+      <li><a href="forma.html">Задать вопрос разработчику</a></li>
     </ul>
   </section>
   <div class="container">
-    <div class="box">
+    <div class="box wow fadeInLeft">
       <div class="content">
         <h2>О компании</h2>
         <p>Узнайте как одна из самых популярных консолей в мире обрела свою славу.</p>
         <a href="#Company">Перейти</a>
       </div>
     </div>
-    <div class="box">
+    <div class="box wow fadeInLeft">
       <div class="content">
         <h2>Консоли</h2>
         <p>Ознакомьтесь с историей консоли.</p>
         <a href="#History">Перейти</a>
       </div>
     </div>
-    <div class="box">
+    <div class="box wow fadeInLeft">
       <div class="content">
         <h2>Эксклюзивы</h2>
         <p>Узнайте какие уникальные игры вас ждут вместе с XBOX.</p>
         <a href="#Exclusives">Перейти</a>
       </div>
     </div>
-    <script src="XBOX.js"></script>
+    <script src="./JS/XBOX.js"></script>
   </div>
 
 </header>
@@ -53,7 +59,7 @@
   <section id="Company">
     <h1>О компании</h1>
 
-    <img src="https://i.ytimg.com/vi/tYMnIZwT500/maxresdefault.jpg">
+    <img class="wow fadeInLeft" src="https://i.ytimg.com/vi/tYMnIZwT500/maxresdefault.jpg">
     <p>Всё началось с того, что четверо ребят из команды разработки DirectX собрались в Фантастическую четверку и стали вынашивать идею о создании собственной игровой консоли.
 
       Шеймус Блэкли,
@@ -77,29 +83,29 @@
       За это время вышло четыре поколения консолей,
       сделав компанию Microsoft одним из основных игроков в этом сегменте, наряду с Sony и Nintendo.</p>
     <div class="card-grid">
-      <a class="card" href="#">
-        <div class="card__background" style="background-image: url(https://a.allegroimg.com/original/03aa52/4c94c41e451fbb525d9ea8c8fc13)"></div>
+      <a class="card">
+        <div class="card__background wow fadeInUp" style="background-image: url(https://a.allegroimg.com/original/03aa52/4c94c41e451fbb525d9ea8c8fc13)"></div>
         <div class="card__content">
           <p class="card__category">XBOX One X/S</p>
           <h3 class="card__heading">Power Your Dreams</h3>
         </div>
       </a>
-      <a class="card" href="#">
-        <div class="card__background" style="background-image: url(https://trashbox.ru/files/965029_30061f/xbox-one.jpg)"></div>
+      <a class="card">
+        <div class="card__background wow fadeInDown"  style="background-image: url(https://trashbox.ru/files/965029_30061f/xbox-one.jpg)"></div>
         <div class="card__content">
           <p class="card__category">XBOX One</p>
           <h3 class="card__heading">Jump In</h3>
         </div>
       </a>
-      <a class="card" href="#">
-        <div class="card__background" style="background-image: url(https://100pristavok.ru/upload/resize_cache/iblock/faf/500_500_140cd750bba9870f18aada2478b24840a/faf410eb78780fa43f5b1e76ff58ea87.jpg)"></div>
+      <a class="card">
+        <div class="card__background wow fadeInUp" style="background-image: url(https://100pristavok.ru/upload/resize_cache/iblock/faf/500_500_140cd750bba9870f18aada2478b24840a/faf410eb78780fa43f5b1e76ff58ea87.jpg)"></div>
         <div class="card__content">
           <p class="card__category">XBOX 360</p>
           <h3 class="card__heading">Jump In</h3>
         </div>
       </a>
-      <a class="card" href="#">
-        <div class="card__background" style="background-image: url(https://gamepull.ru/wp-content/uploads/2019/07/xbox_original.jpg)"></div>
+      <a class="card" >
+        <div class="card__background wow fadeInDown" style="background-image: url(https://gamepull.ru/wp-content/uploads/2019/07/xbox_original.jpg)"></div>
         <div class="card__content">
           <p class="card__category">XBOX</p>
           <h3 class="card__heading">Games will never be the same</h3>
@@ -114,7 +120,7 @@
     <div class="ex-section">
       <div class="boxx">
         <div class="eternity">
-          <div class="card__background" style="background-image: url(https://res.allmacwallpaper.com/get/Retina-MacBook-Pro-15-inch-wallpapers/2021-forza-horizon-5-8k-2880x1800/25095-8.jpg)"></div>
+          <div class="card__background wow fadeInUp" style="background-image: url(https://res.allmacwallpaper.com/get/Retina-MacBook-Pro-15-inch-wallpapers/2021-forza-horizon-5-8k-2880x1800/25095-8.jpg)"></div>
           <div class="card__content">
             <p class="card__category">Forza Horizon 5</p>
           </div>
@@ -122,7 +128,7 @@
       </div>
       <div class="boxx">
         <div class="eternity">
-          <div class="card__background" style="background-image: url(https://vgtimes.ru/uploads/gallery/main/159886/starfield_journey_through_space_16x9_cen.jpg)"></div>
+          <div class="card__background wow fadeInDown" style="background-image: url(https://vgtimes.ru/uploads/gallery/main/159886/starfield_journey_through_space_16x9_cen.jpg)"></div>
           <div class="card__content">
             <p class="card__category">Starfield</p>
           </div>
@@ -130,15 +136,15 @@
       </div>
       <div class="boxx">
         <div class="eternity">
-          <div class="card__background" style="background-image: url(https://comicvine.gamespot.com/a/uploads/original/11117/111173561/5144001-4001201100-Halo5.jpg)"></div>
+          <div class="card__background wow fadeInUp" style="background-image: url(https://comicvine.gamespot.com/a/uploads/original/11117/111173561/5144001-4001201100-Halo5.jpg)"></div>
           <div class="card__content">
             <p class="card__category">Halo 5: Guardians</p>
           </div>
         </div>
       </div>
-      <div class="boxx">
+      <div class="boxx wow fadeInDown">
         <div class="eternity">
-          <div class="card__background" style="background-image: url(https://games.mail.ru/hotbox/content_files/news/2020/12/14/0a9b53489d8d431683e91c070e431298.jpg)"></div>
+          <div class="card__background wow fadeInDown" style="background-image: url(https://games.mail.ru/hotbox/content_files/news/2020/12/14/0a9b53489d8d431683e91c070e431298.jpg)"></div>
           <div class="card__content">
             <p class="card__category">Fable</p>
           </div>
@@ -146,16 +152,16 @@
       </div>
       <div class="boxx">
         <div class="eternity">
-          <div class="card__background" style="background-image: url(https://cdn.mos.cms.futurecdn.net/y2xBbtMhn5zdyxesdAKd7Y.jpg)"></div>
+          <div class="card__background wow fadeInUp" style="background-image: url(https://cdn.mos.cms.futurecdn.net/y2xBbtMhn5zdyxesdAKd7Y.jpg)"></div>
           <div class="card__content">
             <p class="card__category">
               Microsoft Flight Simulator</p>
           </div>
         </div>
       </div>
-      <div class="boxx">
+      <div class="boxx wow fadeInDown">
         <div class="eternity">
-          <div class="card__background" style="background-image: url(https://graph.digiseller.ru/img.ashx?id_d=2708138)"></div>
+          <div class="card__background wow fadeInDown" style="background-image: url(https://graph.digiseller.ru/img.ashx?id_d=2708138)"></div>
           <div class="card__content">
             <p class="card__category">Gears 5</p>
           </div>
@@ -163,13 +169,13 @@
       </div>
       <div class="boxx">
         <div class="eternity">
-          <div class="card__background" style="background-image: url(https://cybersport.metaratings.ru/storage/images/e0/63/e0635cf372aab5d7a60852755bf8f50d.jpg)"></div>
+          <div class="card__background wow fadeInUp" style="background-image: url(https://cybersport.metaratings.ru/storage/images/e0/63/e0635cf372aab5d7a60852755bf8f50d.jpg)"></div>
           <div class="card__content">
             <p class="card__category">XBOX Game Pass</p>
           </div>
         </div>
       </div>
-      <div class="boxx">
+      <div class="boxx wow fadeInDown">
         <div class="eternity">
           <div class="card__background"></div>
           <div class="card__content">
