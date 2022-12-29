@@ -234,7 +234,7 @@ text-align:center;
   filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
 }
 
-@media(max-width: 810px){
+@media(max-width: 830px){
   .card-grid{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 200px);
@@ -282,7 +282,7 @@ align-items: center;
 
 .PS_tag{
 position: relative;
-width: 620px;
+width: 90%;
 height: 300px;
 display: table;
 justify-content: center;
@@ -298,6 +298,8 @@ margin-top: 15px;
 .PlayStation iframe{
 float: left;
 margin: 20px;
+width=560;
+height=315;
 }
 
 #Console_1{
@@ -324,7 +326,7 @@ margin: 20px;
 
 .X_tag{
 position: relative;
-width: 650px;
+width: 90%;
 height: 300px;
 display: table;
 justify-content: center;
@@ -358,7 +360,7 @@ align-items: center;
 
 .Nin_tag{
 position: relative;
-width: 620px;
+width: 90%;
 height: 300px;
 display: table;
 justify-content: center;
@@ -521,6 +523,26 @@ background-image: url(https://media.zicxa.com/749932);
 background-size: 100% auto;
 display: block;
 }
+.PS_tag{
+
+width: 620px;
+height: 300px;
+
+}
+
+.X_tag{
+
+width: 650px;
+height: 300px;
+
+}
+
+.Nin_tag{
+
+width: 620px;
+height: 300px;
+
+}
 }
 
 @media(max-width:1250px){
@@ -554,8 +576,7 @@ list-style-type:none;
 }
 .A_M {
   grid-area: About_Me;
-    border-radius: 10px;
-  text-align: left;
+  border-radius: 10px;
   margin: 20px;
 }
 
