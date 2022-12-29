@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="Pract_13.css" />
+    <title>Pract13</title>
+    <style>
+    #train {
+      position: relative;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+<div id="hr_question" class="hrefs_quest">
+    <p>
+        Хотите полный каталог товаров? Переходите на ->
+        <a href="https://www.gamepark.ru">Gamepark</a>.
+        Узнать о самых новых продуктах? Читайте на ->
+        <a href="https://www.pcgamingwiki.com/wiki/Home"><i>Game Wiki</i></a>
+    </p>
+</div>
+
+<div class="gallery">
+    <img id="main_image" src="graphic-card.png" alt="">
+    <ul id="gallery_list">
+        <li>
+          <img class="list_img" src="https://trashbox.ru/files/1401819_f9cb57/0.webp.png">
+        </li>
+        <li>
+          <img class="list_img" src="https://all-technic.ru/wp-content/uploads/2022/01/PS4-PRO-1-TB-KONSOLA-PLAYSTATION-4-PRO-ZESTAW-Gry-w-zestawie-nie.jpg">
+        </li>
+        <li>
+          <img class="list_img" src="https://ps5hits.com/wp-content/uploads/2019/01/Sony-PlayStation-4-22.jpg">
+        </li>
+        <li>
+          <img class="list_img" src="https://greatgamer.ru/images/news/10.2019/11/news_10095.jpg">
+        </li>
+        <li>
+          <img class="list_img" src="https://i.pinimg.com/originals/0b/9a/8d/0b9a8d672e01c3981f825a7b01d43b62.jpg">
+        </li>
+      </ul>
+</div>
+
+<div class="ulselect">
+    <ul id="for_select">
+        <li>Выбрать предмет №1</li>
+        <li>Выбрать предмет №2</li>
+        <li>Выбрать предмет №3</li>
+        <li>Выбрать предмет №4</li>
+        <li>Выбрать предмет №5</li>
+        <li>Выбрать предмет №6</li>
+    </ul>
+</div>
+
+<div class="slid_move">
+    <div id="slider" class="slider">
+        <div class="thumb"></div>
+      </div>
+</div>
+
+<div class="cart">
+    <div id="our_elms" class="our_elms">
+        <div class="elem draggable">PS5 65000</div>
+        <div class="elem draggable">XBOX/X 45700</div>
+        <div class="elem draggable">Nintendo_Switch 20999</div>
+        <div class="elem draggable">PC 160000</div>
+        <div class="elem draggable">Steam_Deck 45050</div>
+    </div>
+    <div class="carts droppable">
+        <span id="cart_count" class="counter111">0</span>
+    </div>
+    
+</div>
+<img id="train" src="https://js.cx/clipart/train.gif">
+<script src="Pract_13.js"></script>
+
+</body>
+</html>
